@@ -31,22 +31,27 @@
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
     <script src="owlcarousel/owl.carousel.min.js"></script>
 
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v20.0" nonce="HewgFz9d"></script>
+
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <div id="home-container">
         <header id="home-header">
+            <i class="fa-solid fa-bars home-menu-bar"></i>
             <a href="./" id="header-logo-link">
                 <img src="./images/site-logo-only.png" alt="Trang chủ | Tiếng Trung Mộc Miên">
                 <span>
                     Tiếng Trung<br>Mộc Miên
                 </span>
             </a>
-            <nav>
+            <nav class="header-nav-hidden">
                 <a href="./" class="header-links-item">Trang chủ</a>
                 <a href="" class="header-links-item">Giới thiệu</a>
                 <a href="" class="header-links-item">Khoá học</a>
-                <a href="" class="header-links-item">Tin tức</a>
                 <a href="" class="header-links-item">Bài viết</a>
                 <a href="" class="header-links-item">Liên hệ</a>
             </nav>
@@ -63,10 +68,7 @@
             <div class="intro-bg-main">
                 <div class="intro-bg-left">
                     <h1 class="intro-left-heading" data-aos="fade-right">
-                        Học Tiếng Trung
-                        <br>
-                        cùng
-                        <br>
+                        Học Tiếng Trung cùng
                         <span class="color-primary">Mộc Miên</span>
                     </h1>
                     <p class="intro-left-desc text-color-2"  data-aos="fade-left">
@@ -123,20 +125,20 @@
                 </div>
             </div>
             <div class="intro-elements-wrap" data-aos="fade-up">
-                <ul class="intro-elements-list">
-                    <li class="intro-elements-item">
+                <ul class="intro-elements-list row gy-3">
+                    <li class="intro-elements-item col-xl-3 col-md-3 col-6">
                         <i class="fa-solid fa-laptop icon-round"></i>
                         Học online/offline
                     </li>
-                    <li class="intro-elements-item">
+                    <li class="intro-elements-item col-xl-3 col-md-3 col-6">
                         <i class="fa-solid fa-book-open icon-round"></i>
                         50+ khoá học
                     </li>
-                    <li class="intro-elements-item">
+                    <li class="intro-elements-item col-xl-3 col-md-3 col-6">
                         <i class="fa-solid fa-book icon-round"></i>
                         Giáo trình chi tiết
                     </li>
-                    <li class="intro-elements-item">
+                    <li class="intro-elements-item col-xl-3 col-md-3 col-6">
                         <i class="fa-solid fa-award icon-round"></i>
                         Cam kết đầu ra
                     </li>
@@ -146,19 +148,19 @@
 
         <div class="feature-courses-wrap">
             <div class="ft-courses-header row">
-                <div class="ft-courses-title col-6">
+                <div class="ft-courses-title col-xl-6 col-md-6 col-sm-4">
                     <h3 class="ft-courses-title-fir" data-aos="fade-right">Các khoá học</h3>
                     <h2 class="ft-courses-title-sec">Nổi bật tại Mộc Miên</h2>
                 </div>
-                <div class="ft-courses-desc col-6">
+                <div class="ft-courses-desc col-xl-6 col-md-6 col-sm-8">
                     <p class="text-color-2">Tại Mộc Miên, bạn sẽ được học những khoá học chất lượng với phương pháp giảng dạy độc đáo, 
                         tư duy sáng tạo, mẹo vặt ghi nhớ kiến thức. Đồng thời nâng cao kĩ năng giao tiếp qua các
                         hoạt động nhóm.
                     </p>
                 </div>
             </div>
-            <ul class="ft-courses-list row" data-aos="fade-up" data-aos-duration="1500">
-                <li class="ft-courses-item col-4">
+            <ul class="ft-courses-list row gy-3" data-aos="fade-up" data-aos-duration="1500">
+                <li class="ft-courses-item col-xl-4 col-md-12">
                     <div class="ft-course-item-body">
                         <img src="./images/course-1.jpg" alt="" class="ft-course-img">
                         <h4 class="ft-course-name">Giao tiếp cơ bản</h4>
@@ -180,7 +182,7 @@
                         <a href="" class="btn-primary ft-course-btn-view">Xem Chi tiết</a>
                     </div>
                 </li>
-                <li class="ft-courses-item col-4">
+                <li class="ft-courses-item col-xl-4 col-md-12">
                     <div class="ft-course-item-body">
                         <img src="./images/course-2.jpg" alt="" class="ft-course-img">
                         <h4 class="ft-course-name">Ôn thi HSK</h4>
@@ -203,7 +205,7 @@
                         <a href="" class="btn-primary ft-course-btn-view">Xem Chi tiết</a>
                     </div>
                 </li>
-                <li class="ft-courses-item col-4">
+                <li class="ft-courses-item col-xl-4 col-md-12">
                     <div class="ft-course-item-body">
                         <img src="./images/course-3.jpg" alt="" class="ft-course-img">
                         <h4 class="ft-course-name">Tiếng Trung cho người mới bắt đầu</h4>
@@ -245,7 +247,7 @@
                     </p>
                 </div>
                 <ul class="reason-body-list row gy-3">
-                    <li class="reason-item col-6">
+                    <li class="reason-item col-12 col-xl-6 col-md-6">
                         <div class="reason-item-wrap">
                             <div class="reason-icon-wrap">
                                 <i class="fa-solid fa-star icon-round"></i>
@@ -258,7 +260,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="reason-item col-6">
+                    <li class="reason-item col-12 col-xl-6 col-md-6">
                         <div class="reason-item-wrap">
                             <div class="reason-icon-wrap">
                                 <i class="fa-solid fa-book-bookmark icon-round"></i>
@@ -272,7 +274,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="reason-item col-6">
+                    <li class="reason-item col-12 col-xl-6 col-md-6">
                         <div class="reason-item-wrap">
                             <div class="reason-icon-wrap">
                                 <i class="fa-solid fa-chalkboard-user icon-round"></i>
@@ -285,7 +287,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="reason-item col-6">
+                    <li class="reason-item col-12 col-xl-6 col-md-6">
                         <div class="reason-item-wrap">
                             <div class="reason-icon-wrap">
                                 <i class="fa-solid fa-laptop icon-round"></i>
@@ -313,13 +315,13 @@
             </div>
 
             <div class="review-content row" data-aos="fade-right">
-                <div class="review-content-img-wrap col-4">
+                <div class="review-content-img-wrap col-xl-4 col-md-4 col-12">
                     <div class="review-img-parent">
                         <img class="review-content-img" src="./images/student.jpg" alt="">
                         <i class="fa-solid fa-quote-left icon-round"></i>
                     </div>
                 </div>
-                <div class="review-content-body col-8">
+                <div class="review-content-body col-xl-8 col-md-8">
                     <ul class="review-content-list owl-carousel-review">
                         <li class="review-content-item">
                             <div class="review-content-msg-wrap">
@@ -372,7 +374,7 @@
 
         <div class="nw-blog-wrap">
             <div class="nw-blog-heading heading-center">
-                <h5 class="nw-blog-sub-heading heading-center-sub">
+                <h5 class="nw-blog-sub-heading heading-center-sub" data-aos="fade-up">
                     Tìm đọc
                 </h5>
                 <h4 class="nw-blog-main-heading heading-center-main">
@@ -383,23 +385,142 @@
                     những bài viết về kiến thức, kinh nghiệm học tiếng Trung.
                 </p>
             </div>
-            <div class="nw-blog-content">
-                <ul class="nw-blog-list">
-                    <li class="nw-blog-item">
+            <div class="nw-blog-content" data-aos="fade-right">
+                <ul class="nw-blog-list row gy-5">
+                    <li class="nw-blog-item col-xl-4 col-md-12">
                         <div class="nw-blog-item-body">
-                            <a href="" class="blog-item-link-img"></a>
-                            <img src="./images/blog-1.jpg" alt="">
+                            <a href="" class="blog-item-link-img">
+                                <img src="./images/blog-3.jpg" alt="" class="blog-item-img">
+                            </a>
                             <div class="nw-blog-item-ref">
-
+                                <a href="" class="blog-item-link-title">
+                                    Thông báo: Lịch học Tiếng Trung tháng 8
+                                </a>
+                                <span class="blog-item-date text-color-2">July 2, 2024</span>
+                                <p class="blog-item-short-desc text-color-2">
+                                    Trung tâm Tiếng Trung Mộc Miên xin thông báo tới các học viên
+                                    về lịch học mới trong tháng 8/2024 này
+                                </p>
+                                <a href="" class="blog-item-read-more">
+                                    Đọc tiếp
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
                             </div>
-                        </div>
+                        </a>
+                    </li>
+                    <li class="nw-blog-item col-xl-4 col-md-12">
+                        <div class="nw-blog-item-body">
+                            <a href="" class="blog-item-link-img">
+                                <img src="./images/blog-1.jpg" alt="" class="blog-item-img">
+                            </a>
+                            <div class="nw-blog-item-ref">
+                                <a href="" class="blog-item-link-title">
+                                    Những từ vựng thường gặp về hoa quả
+                                </a>
+                                <span class="blog-item-date text-color-2">July 2, 2024</span>
+                                <p class="blog-item-short-desc text-color-2">
+                                    Hoa quả là một chủ đề khá phổ biến, thường xuyên bắt gặp
+                                    trong cuộc sống. Hôm nay hãy cùng Mộc Miên tìm hiểu về
+                                    một số tên loại hoa quả thường gặp như quýt, na, dưa hấu...
+                                </p>
+                                <a href="" class="blog-item-read-more">
+                                    Đọc tiếp
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nw-blog-item col-xl-4 col-md-12">
+                        <div class="nw-blog-item-body">
+                            <a href="" class="blog-item-link-img">
+                                <img src="./images/blog-2.jpg" alt="" class="blog-item-img">
+                            </a>
+                            <div class="nw-blog-item-ref">
+                                <a href="" class="blog-item-link-title">
+                                    Tất tần tật: Từ vựng Tiếng Trung về các loài động vật
+                                </a>
+                                <span class="blog-item-date text-color-2">July 2, 2024</span>
+                                <p class="blog-item-short-desc text-color-2">
+                                    Cùng Mộc Miên học danh sách từ vựng về các con vật tiếng Trung
+                                    theo nhóm loài kèm các mẫu câu giao tiếp thông dụng ở bài viết
+                                    dưới đây nhé
+                                </p>
+                                <a href="" class="blog-item-read-more">
+                                    Đọc tiếp
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
+
+        <footer id="home-footer">
+            <div class="footer-wrap row gy-4">
+                <div class="footer-info col-xl-4 col-md-6">
+                    <img src="./images/site-logo-full.png" alt="" class="footer-logo">
+                    <p class="footer-info-desc">
+                        Mộc Miên đang cố gắng từng ngày để mang đến những giá trị về học thuật
+                        đáp ứng cho nhu cầu của mọi người, mọi nhà trên khắp Quảng Trị.
+                    </p>
+                    <p class="footer-slogan">
+                        Mộc Miên — "Với ngoại ngữ, mọi nơi đều là nhà."
+                    </p>
+                </div>
+                <div class="footer-contact col-xl-3 col-md-6">
+                    <h5 class="footer-section-title">Liên hệ</h5>
+                    <a href="" class="footer-contact-link">
+                        <i class="fa-solid fa-phone"></i>
+                        0233.3855.868
+                        <br>
+                        hoặc 091723612
+                    </a>
+                    <a href="" class="footer-contact-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        tiengtrungmocmien@gmail.com
+                    </a>
+                    <div class="footer-contact-location">
+                        <i class="fa-solid fa-location-dot"></i>
+                        90 Lê Lợi, Phường 5, Đông Hà, Quảng Trị
+                    </div>
+                </div>
+                <div class="footer-in-link-wrap col-xl-2 col-md-6">
+                    <h5 class="footer-section-title">Liên kết</h5>
+                    <a href="" class="footer-in-link">Trang chủ</a>
+                    <a href="" class="footer-in-link">Giới thiệu</a>
+                    <a href="" class="footer-in-link">Khoá học</a>
+                    <a href="" class="footer-in-link">Bài viết</a>
+                    <a href="" class="footer-in-link">Liên hệ</a>
+
+                </div>
+                <div class="footer-follow-page col-xl-3 col-md-6">
+                    <h5 class="footer-section-title">Theo dõi</h5>
+                    <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100063150013801" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/profile.php?id=100063150013801" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/profile.php?id=100063150013801">Tiếng Trung Mộc Miên - Đông Hà Quảng Trị 0869259245</a></blockquote></div>
+                    <div class="footer-social">
+                        <a href="" class="footer-social-link">
+                            <i class="fa-brands fa-facebook-f icon-round"></i>
+                        </a>
+                        <a href="" class="footer-social-link">
+                            <i class="fa-brands fa-tiktok icon-round"></i>
+                        </a>
+                        <a href="" class="footer-social-link">
+                            <i class="fa-brands fa-instagram icon-round"></i>
+                        </a>
+                        <a href="" class="footer-social-link">
+                            <i class="fa-brands fa-youtube icon-round"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-separator"></div>
+                <div class="footer-copyright">
+                    <span>Copyright © 2024 - <a href="/">tiengtrungmocmien.edu.vn</a></span>
+                    <span>Trung tâm Tiếng Trung Mộc Miên</span>
+                </div>
+            </div>
+        </footer>
     </div>
     <script>
-        
         $(document).ready(function(){
             AOS.init({
                 once: false,
@@ -413,6 +534,16 @@
                 loop: true,
                 autoplay: true,
             });
+        });
+        const mobileBar = document.querySelector('.home-menu-bar');
+        const headerNav = document.querySelector('#home-header nav');
+        mobileBar.addEventListener('click', function(event) {
+            if (headerNav.classList.contains('header-nav-hidden')) {
+                headerNav.classList.remove('header-nav-hidden');
+            }
+            else {
+                headerNav.classList.add('header-nav-hidden');
+            }
         });
     </script>
 </body>
